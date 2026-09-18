@@ -1,0 +1,28 @@
+{
+  "name": "notability-access",
+  "version": "0.1.0",
+  "description": "Securely search and read Notability exports from a user-selected backup folder.",
+  "author": {
+    "name": "JustinWaysHinnant",
+    "url": "https://github.com/JustinWaysHinnant"
+  },
+  "homepage": "https://github.com/JustinWaysHinnant/Notability-Integration",
+  "repository": "https://github.com/JustinWaysHinnant/Notability-Integration",
+  "license": "MIT",
+  "keywords": ["notability", "notes", "backup", "study"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Notability Access",
+    "shortDescription": "Search and read your Notability backups.",
+    "longDescription": "Connects Codex to a local folder containing Notability PDF, RTF, Note, ZIP, text, image, and audio exports. Access is limited to the folder you explicitly configure.",
+    "developerName": "JustinWaysHinnant",
+    "category": "Productivity",
+    "capabilities": ["Read", "Search", "Local files"],
+    "defaultPrompt": [
+      "Connect my Notability backup folder.",
+      "Search my Notability notes.",
+      "Summarize my recently changed notes."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "notability-integration",
+  "interface": {
+    "displayName": "Notability Integration"
+  },
+  "plugins": [
+    {
+      "name": "notability-access",
+      "source": {
+        "source": "local",
+        "path": "./plugins/notability-access"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

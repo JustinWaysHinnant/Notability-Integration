@@ -1,0 +1,17 @@
+{
+  "name": "notability-integration",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Validation and tests for the Notability Access Codex plugin.",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "syntax": "node --check plugins/notability-access/scripts/server.mjs",
+    "test:server": "node --test tests/server.test.mjs",
+    "test": "npm run validate && npm run syntax && npm run test:server"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest a focused improvement to Notability Access.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What workflow is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the desired behavior and privacy implications.
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Required access
+      options:
+        - Read-only local files
+        - Local file writes
+        - Browser interaction
+        - External network access
+    validations:
+      required: true

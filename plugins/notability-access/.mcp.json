@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "notability_access": {
+      "command": "node",
+      "args": ["./scripts/server.mjs"],
+      "cwd": ".",
+      "enabled": true,
+      "env_vars": ["NOTABILITY_BACKUP_DIR", "LOCALAPPDATA", "USERPROFILE"],
+      "startup_timeout_sec": 15,
+      "tool_timeout_sec": 120,
+      "tools": {
+        "configure_backup": {
+          "approval_mode": "prompt"
+        }
+      }
+    }
+  }
+}
