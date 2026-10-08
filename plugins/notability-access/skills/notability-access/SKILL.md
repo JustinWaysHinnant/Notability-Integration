@@ -1,6 +1,6 @@
 ---
 name: notability-access
-description: Search, read, summarize, and organize content from a configured Notability Auto-Backup or export folder. Use when the user asks about their Notability notes or asks to connect a Notability backup folder.
+description: Search, read, summarize, and organize content from a configured Notability export folder or synced iOS Auto-Backup. Use when the user asks about their Notability notes or asks to connect a Notability export folder.
 ---
 
 # Notability Access
@@ -9,7 +9,7 @@ Use the `notability_access` MCP tools for the user's exported Notability library
 
 ## First-time setup
 
-1. Ask for the local path of the folder synced from Notability Auto-Backup.
+1. Ask for the local folder containing manually exported notes or files synced from Notability iOS Auto-Backup.
 2. Call `configure_backup` with that absolute folder path. The tool validates that the folder exists and stores only the path.
 3. Call `status` to verify the connection.
 
@@ -28,4 +28,7 @@ When the user explicitly wants to change the live Notability library, use Notabi
 
 ## Export guidance
 
-Recommend PDF for visual fidelity, RTF for editable typed text, or PDF + Recording when audio matters. Explain that Auto-Backup is one-way and may retain exported copies after notes are deleted in Notability.
+- Third-party Auto-Backup is currently an iOS-only Notability feature. Never direct a Windows or newer Mac desktop user to look for Auto-Backup.
+- On Windows, desktop Mac, or the web app, instruct the user to export each note as a PDF into the configured folder.
+- On iPhone or iPad, recommend PDF for visual fidelity, RTF for editable typed text, or PDF + Recording when audio matters.
+- Explain that iOS Auto-Backup is one-way and may retain exported copies after notes are deleted in Notability.

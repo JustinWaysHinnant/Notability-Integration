@@ -200,10 +200,10 @@ function searchNotes(args) {
 const tools = [
   {
     name: "configure_backup",
-    description: "Configure the absolute local folder containing Notability Auto-Backup or exported notes. Stores only the folder path.",
+    description: "Configure the absolute local folder containing manual Notability exports or a synced iOS Auto-Backup. Stores only the folder path.",
     inputSchema: {
       type: "object",
-      properties: { root: { type: "string", description: "Absolute path to the synced Notability backup folder." } },
+      properties: { root: { type: "string", description: "Absolute path to the local Notability export folder." } },
       required: ["root"],
       additionalProperties: false
     }

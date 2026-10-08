@@ -1,6 +1,6 @@
 {
   "name": "notability-access",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Securely search and read Notability exports from a user-selected backup folder.",
   "author": {
     "name": "JustinWaysHinnant",

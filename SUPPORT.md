@@ -7,6 +7,6 @@ Before reporting a problem:
 1. Confirm Node.js 18 or later is available as `node`.
 2. Run `npm test` from the repository root.
 3. Verify the configured backup folder exists locally.
-4. Confirm Notability Auto-Backup has completed.
+4. Confirm the folder contains manual exports, or that iOS Auto-Backup has completed. Auto-Backup is not currently available in the Windows desktop app.
 
 Never post real note content, recordings, credentials, or private local paths in a public issue.

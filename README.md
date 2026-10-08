@@ -33,15 +33,27 @@ codex plugin add notability-access@notability-integration
 
 Restart Codex or start a new task after installation.
 
-## Configure Notability
+## Populate the integration folder
 
-In Notability, open **Settings → Connected Services → Auto-Backup/Third-Party Backup**. Choose Google Drive, Dropbox, OneDrive, Box, or WebDAV, then select an export format:
+Notability currently limits third-party Auto-Backup to **iOS**. The Windows and newer Mac desktop apps do not show that setting.
 
-- **PDF** preserves handwriting and page appearance.
-- **RTF** makes typed text searchable by this integration.
-- **PDF + Recording** preserves the PDF and associated audio.
+### Windows, desktop Mac, and web
 
-Let the cloud service sync the Notability folder to your computer. See [Notability's Auto-Backup guide](https://support.gingerlabs.com/hc/en-us/articles/206061467-Auto-Backup-Third-Party-Backup-Guide) for current instructions.
+Export notes manually as PDFs and save them in a folder that syncs to this computer. The Windows and Mac desktop apps support PDF export, including handwriting, typed notes, images, and math.
+
+For a typical OneDrive installation, use:
+
+```text
+%USERPROFILE%\OneDrive\Notability
+```
+
+In a note, open its options menu, select **Export as PDF**, and choose that folder. See Notability's [desktop documentation](https://support.gingerlabs.com/en-us/articles/16634098-notability-for-windows-and-mac) and [PDF export announcement](https://blog.notability.com/post/one-notebook-for-every-meeting-on-your-calendar).
+
+### iPhone or iPad
+
+You can enable **Settings → Connected Services → Auto-Backup/Third-Party Backup**, select OneDrive, and use the `Notability` destination. Choose PDF for visual fidelity, RTF for searchable typed text, or PDF + Recording when audio matters. See [Notability's Auto-Backup guide](https://support.gingerlabs.com/hc/en-us/articles/206061467-Auto-Backup-Third-Party-Backup-Guide).
+
+Notability's [plan comparison](https://notability.com/pricing/compare) identifies third-party backup as an iOS-only feature.
 
 ## Connect the backup folder
 
@@ -55,7 +67,7 @@ Codex asks for approval before storing the folder path. The setting is saved loc
 %LOCALAPPDATA%\Codex\notability-access\config.json
 ```
 
-You can alternatively define `NOTABILITY_BACKUP_DIR` in the Codex environment.
+You can alternatively define `NOTABILITY_BACKUP_DIR` in the Codex environment. The folder may contain manual exports or files synced from iOS Auto-Backup.
 
 ## Example prompts
 
